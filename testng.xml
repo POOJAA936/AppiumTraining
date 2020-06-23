@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite">
+  <test thread-count="2" name="Test">
+  <test name="Test1">
+  <parameter name="deviceName" value="vivo 1920"></parameter>
+  <parameter name="platformVersion" value="8"></parameter>
+  <parameter name="UDID" value="c0a5ce8f"></parameter>
+  <parameter name="port" value="4723"></parameter>
+  <classes>
+  <class name="com.appiumprojec.test.ParallelExecution"/>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+  <parameter name="deviceName" value="oppo a57"></parameter>
+  <parameter name="platformVersion" value="6"></parameter>
+  <parameter name="UDID" value="emulator-5554"></parameter>
+  <parameter name="port" value="4723"></parameter>
+  <classes>
+  <class name="com.appiumprojec.test.ParallelExecution"/>
+  <class name="com.appiumprojec.test.SwipeAction"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
